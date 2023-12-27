@@ -1,0 +1,119 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.Game_Bord{
+   position: relative;
+   
+   width: 80%;
+   top: 120px;
+   border-bottom: 5px solid black;
+   border-left: 5px solid black;
+   border-right: 5px solid black;
+   border-top: 5px solid black;
+   margin: 0 auto;
+   height: 500px;
+   overflow: hidden;
+   
+
+}
+
+.Text_Pag1 {
+   box-sizing: border-box;
+  
+   background: black;
+
+   position: absolute;
+   left: 20%;
+   top: 20%;
+   color: rgb(255, 255, 255);
+
+   font-style: arial;
+   font-size: 50px;
+   
+}
+
+button {
+   position: absolute;
+   width: 300px;
+   height: 100px;
+   left: 39.5%;
+   bottom: 40%;
+   font-size: 50px;
+   background-color: black;
+   font: arial;
+   color: white;
+   
+}
+.Loading {
+
+   animation: Loading_Animation 1s infinite linear;
+}
+.Botao_animation{
+   animation: Botao_Animation 1s infinite linear;
+}
+
+.JAVS_Skate{
+   position: absolute;
+
+   width: 100px;
+   height: 200px;
+   bottom: 0px;
+   left: -100px;
+
+}
+.JAVS_Skate_Animation {
+   animation: JAVS_Sk_Animation 3s linear;
+}
+
+@keyframes Loading_Animation {
+
+  0% {
+   left: 42%;
+  } 
+  20% {
+   color: red;
+  }
+  40%{
+   color: blue;
+  }
+  80%{
+   color: green;
+  }
+  100%{
+   color: white;
+   left: 42%;
+  }
+}
+@keyframes Botao_Animation {
+
+   0% {
+    left: 39.5%;
+   } 
+   20% {
+    color: red;
+   }
+   40%{
+    color: blue;
+   }
+   80%{
+    color: green;
+   }
+   100%{
+    color: white;
+    left: 39.5%;
+   }
+ }
+
+ @keyframes JAVS_Sk_Animation {
+
+   0%{
+      left: -100px;
+   }
+   100%{
+      left: 1200px;
+   }
+
+}
